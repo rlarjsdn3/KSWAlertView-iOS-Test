@@ -725,24 +725,73 @@ open class SCLAlertView: UIViewController {
     var snapBehavior: UISnapBehavior?
     
     fileprivate func animate(item: UIView, center: CGPoint) {
-        // ...
+        
+        if let snapBehavior = self.snapBehavior {
+            self.animator?.removeBehavior(snapBehavior)
+        }
+        
+        self.animator = UIDynamicAnimator(referenceView: self.view)
+        let tempSnapBehavior = UISnapBehavior(item: item, snapTo: center)
+        self.animator?.addBehavior(tempSnapBehavior)
+        self.snapBehavior = tempSnapBehavior
     }
     
     @objc func updateShowTimeout() {
-        // ...
+        
+        guard let timeout = self.timeout else {
+            return
+        }
+        
+        self.timeout?.value = timeout.value.advanced(by: -1)
+        
+        for btn in buttons {
+            guard let showTimeout = btn.showTimeout else {
+                continue
+            }
+            
+            let timeoutStr: String = showTimeout.prefix + String(Int(timeout.value)) + showTimeout.suffix
+            let txt = String(btn.initalTitle) + " " + timeoutStr
+            btn.setTitle(txt, for: .normal)
+        }
     }
     
     // Close SCLAlertView
     @objc open func hideView() {
-        // ...
+        UIView.animate(withDuration: 0.2, animations: {
+            self.view.alpha = 0
+        }, completion: { finished in
+            
+            // Stop timeoutTimer so alertView does not attempt to hide itself and fire it's dismiss a second time when close button is tapped
+            self.timeoutTimer?.invalidate()
+            
+            if let dismissBlock = self.dismissBlock {
+                // Call completion handler when the alert is dismissed
+                dismissBlock()
+            }
+            
+            // This is necessary for SCLAlertView to be de-initalized, preventing a strong reference cycle with the viewcontroller calling SCLAlertView.
+            for button in self.buttons {
+                button.action = nil
+                button.target = nil
+                button.selector = nil
+            }
+            
+            self.view.removeFromSuperview()
+            self.selfReference = nil
+        })
     }
     
     @objc open func hideViewTimeout() {
-        // ...
+        self.timeout?.action()
+        self.hideView()
     }
     
     func checkCircleIconImage(_ circleIconImage: UIImage?, defaultImage: UIImage) -> UIImage {
-        // ...
+        if let image = circleIconImage {
+            return image
+        } else {
+            return defaultImage
+        }
     }
     
     // Return true if a SCLAlertView is already being shown, false otherwise
@@ -758,7 +807,24 @@ open class SCLAlertView: UIViewController {
     }
     
     private func getIconImage() -> UIImage? {
-        // ...
+        switch style {
+        case .wait, .none:
+            return nil
+        case .success:
+            return SCLAlertViewStyleKit.imageOfCheckmark
+        case .error:
+            return SCLAlertViewStyleKit.imageOfCross
+        case .notice:
+            return SCLAlertViewStyleKit.imageOfNotice
+        case .warning:
+            return SCLAlertViewStyleKit.imageOfWarning
+        case .info:
+            return SCLAlertViewStyleKit.imageOfInfo
+        case .edit:
+            return SCLAlertViewStyleKit.imageOfEdit
+        case .question:
+            return SCLAlertViewStyleKit.imageOfQuestion
+        }
     }
     
 }
