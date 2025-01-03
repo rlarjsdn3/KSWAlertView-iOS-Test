@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func didTapButton(_ sender: Any) {
+        _ = SCLAlertView().showInfo("Info", subTitle: "This is a simple info alert")
+    }
+    
 }
 
