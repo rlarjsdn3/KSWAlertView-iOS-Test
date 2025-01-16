@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'SCLAlertView_Example' do
+  pod 'SCLAlertView', :path => '../'
+
+  target 'SCLAlertView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

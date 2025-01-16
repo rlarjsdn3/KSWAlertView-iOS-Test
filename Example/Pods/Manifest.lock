@@ -1,0 +1,16 @@
+PODS:
+  - SCLAlertView (0.1.0)
+
+DEPENDENCIES:
+  - SCLAlertView (from `../`)
+
+EXTERNAL SOURCES:
+  SCLAlertView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SCLAlertView: e561ddf522492f36d6b3deb71666e529f7b45c34
+
+PODFILE CHECKSUM: b662549061017fea5f67e118ffb802ecaf545a48
+
+COCOAPODS: 1.16.2
