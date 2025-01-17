@@ -15,7 +15,14 @@
 		B49D6478C9F62BFF832141AD1DEA65A3 /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F143E9E556DF03B73E31104A255F01E0 /* SCLAlertView-dummy.m */; };
 		B6BEDD7514190D1B39B3AF1A45B75932 /* Pods-SCLAlertView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD86F3F670D22B5BAE6C984B17828834 /* Pods-SCLAlertView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC7A0074890B635D038FFE4F450FB501 /* Pods-SCLAlertView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9146336C642BA2115C12BEFB5D3050 /* Pods-SCLAlertView_Tests-dummy.m */; };
-		C77477172D38C30A0008AF73 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77477162D38C30A0008AF73 /* SCLExtensions.swift */; };
+		C7395EFB2D39EAE600BF9E16 /* SCLAlertViewStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7395EF82D39EAE600BF9E16 /* SCLAlertViewStyleKit.swift */; };
+		C7395EFC2D39EAE600BF9E16 /* SCLAlertView+TimeoutConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7395EF52D39EAE600BF9E16 /* SCLAlertView+TimeoutConfiguration.swift */; };
+		C7395EFD2D39EAE600BF9E16 /* SCLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7395EF92D39EAE600BF9E16 /* SCLButton.swift */; };
+		C7395EFE2D39EAE600BF9E16 /* SCLAlertView+SCLAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7395EF42D39EAE600BF9E16 /* SCLAlertView+SCLAppearance.swift */; };
+		C7395EFF2D39EAE600BF9E16 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7395EFA2D39EAE600BF9E16 /* SCLExtensions.swift */; };
+		C7395F002D39EAE600BF9E16 /* SCLAlertViewResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7395EF62D39EAE600BF9E16 /* SCLAlertViewResponder.swift */; };
+		C7395F012D39EAE600BF9E16 /* SCLAlertViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7395EF72D39EAE600BF9E16 /* SCLAlertViewStyle.swift */; };
+		C7395F042D39EAF200BF9E16 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7395F022D39EAF200BF9E16 /* Optional.swift */; };
 		D7CC01F9C1875C9B64F88559DE6FB41A /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CA5E067742CC366F6A6303BF72C840 /* SCLAlertView.swift */; };
 		FACCD1785C57931F436DF5904AFCA9CA /* Pods-SCLAlertView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A261B1CC2C8B7E242E690CCB6F159746 /* Pods-SCLAlertView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -64,7 +71,14 @@
 		BB4F5168DF3473943F86846000DE3D1B /* SCLAlertView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SCLAlertView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BD86F3F670D22B5BAE6C984B17828834 /* Pods-SCLAlertView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SCLAlertView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		C511112DAFBB8DC5AB6C91CED30801C6 /* Pods-SCLAlertView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SCLAlertView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C77477162D38C30A0008AF73 /* SCLExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/Classes/SCLExtensions.swift; sourceTree = "<group>"; };
+		C7395EF42D39EAE600BF9E16 /* SCLAlertView+SCLAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SCLAlertView+SCLAppearance.swift"; path = "SCLAlertView/Classes/SCLAlertView+SCLAppearance.swift"; sourceTree = "<group>"; };
+		C7395EF52D39EAE600BF9E16 /* SCLAlertView+TimeoutConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "SCLAlertView+TimeoutConfiguration.swift"; path = "SCLAlertView/Classes/SCLAlertView+TimeoutConfiguration.swift"; sourceTree = "<group>"; };
+		C7395EF62D39EAE600BF9E16 /* SCLAlertViewResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SCLAlertViewResponder.swift; path = SCLAlertView/Classes/SCLAlertViewResponder.swift; sourceTree = "<group>"; };
+		C7395EF72D39EAE600BF9E16 /* SCLAlertViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SCLAlertViewStyle.swift; path = SCLAlertView/Classes/SCLAlertViewStyle.swift; sourceTree = "<group>"; };
+		C7395EF82D39EAE600BF9E16 /* SCLAlertViewStyleKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SCLAlertViewStyleKit.swift; path = SCLAlertView/Classes/SCLAlertViewStyleKit.swift; sourceTree = "<group>"; };
+		C7395EF92D39EAE600BF9E16 /* SCLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SCLButton.swift; path = SCLAlertView/Classes/SCLButton.swift; sourceTree = "<group>"; };
+		C7395EFA2D39EAE600BF9E16 /* SCLExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/Classes/SCLExtensions.swift; sourceTree = "<group>"; };
+		C7395F022D39EAF200BF9E16 /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		C9CA5E067742CC366F6A6303BF72C840 /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/Classes/SCLAlertView.swift; sourceTree = "<group>"; };
 		D330E7CE8A7C2B853BDB2235E0CCFF0A /* Pods_SCLAlertView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCLAlertView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAAD5C875102381A856040688FFCDEE /* Pods-SCLAlertView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SCLAlertView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -180,10 +194,17 @@
 		6EB222F8D01C35B99114E511F61462E9 /* SCLAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				C7395EF42D39EAE600BF9E16 /* SCLAlertView+SCLAppearance.swift */,
+				C7395EF52D39EAE600BF9E16 /* SCLAlertView+TimeoutConfiguration.swift */,
+				C7395EF62D39EAE600BF9E16 /* SCLAlertViewResponder.swift */,
+				C7395EF72D39EAE600BF9E16 /* SCLAlertViewStyle.swift */,
+				C7395EF82D39EAE600BF9E16 /* SCLAlertViewStyleKit.swift */,
+				C7395EF92D39EAE600BF9E16 /* SCLButton.swift */,
+				C7395EFA2D39EAE600BF9E16 /* SCLExtensions.swift */,
 				C9CA5E067742CC366F6A6303BF72C840 /* SCLAlertView.swift */,
-				C77477162D38C30A0008AF73 /* SCLExtensions.swift */,
 				02D6CB9F72D2D64DF455E7714B9AEBCA /* Pod */,
 				6BE0A0DE25D854CED7754FE4F25DC47C /* Support Files */,
+				C7395F032D39EAF200BF9E16 /* Utils */,
 			);
 			name = SCLAlertView;
 			path = ../..;
@@ -197,6 +218,15 @@
 				962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C7395F032D39EAF200BF9E16 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C7395F022D39EAF200BF9E16 /* Optional.swift */,
+			);
+			name = Utils;
+			path = SCLAlertView/Classes/Utils;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -386,9 +416,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C77477172D38C30A0008AF73 /* SCLExtensions.swift in Sources */,
+				C7395F042D39EAF200BF9E16 /* Optional.swift in Sources */,
 				D7CC01F9C1875C9B64F88559DE6FB41A /* SCLAlertView.swift in Sources */,
 				B49D6478C9F62BFF832141AD1DEA65A3 /* SCLAlertView-dummy.m in Sources */,
+				C7395EFB2D39EAE600BF9E16 /* SCLAlertViewStyleKit.swift in Sources */,
+				C7395EFC2D39EAE600BF9E16 /* SCLAlertView+TimeoutConfiguration.swift in Sources */,
+				C7395EFD2D39EAE600BF9E16 /* SCLButton.swift in Sources */,
+				C7395EFE2D39EAE600BF9E16 /* SCLAlertView+SCLAppearance.swift in Sources */,
+				C7395EFF2D39EAE600BF9E16 /* SCLExtensions.swift in Sources */,
+				C7395F002D39EAE600BF9E16 /* SCLAlertViewResponder.swift in Sources */,
+				C7395F012D39EAE600BF9E16 /* SCLAlertViewStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

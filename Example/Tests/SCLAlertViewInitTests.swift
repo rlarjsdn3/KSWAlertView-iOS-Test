@@ -24,7 +24,7 @@ final class SCLAlertViewInitTests: XCTestCase {
         let alert = SCLAlertView()
         
         // then
-        let darkGray = UIColor(red: 0, green: 0, blue: 0, alpha: 0.7)
+        let darkGray = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
         XCTAssertEqual(alert.view.backgroundColor, darkGray)
     }
     

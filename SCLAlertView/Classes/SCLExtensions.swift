@@ -45,7 +45,10 @@ extension String {
     func heightWithConstraintWidth(width: CGFloat, font: UIFont) -> CGFloat {
         let constraintRect = CGSize(width: width, height: CGFloat.greatestFiniteMagnitude)
         
-        let boundingBox = self.boundingRect(with: constraintRect, options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
+        let boundingBox = self.boundingRect(with: constraintRect,
+                                            options: NSStringDrawingOptions.usesLineFragmentOrigin,
+                                            attributes: [NSAttributedString.Key.font: font],
+                                            context: nil)
         
         return boundingBox.height
     }

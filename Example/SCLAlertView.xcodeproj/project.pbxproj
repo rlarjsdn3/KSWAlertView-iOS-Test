@@ -15,7 +15,10 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* SCLAlertViewInitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* SCLAlertViewInitTests.swift */; };
 		A58B244689142E5DEFD8AAD2 /* Pods_SCLAlertView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 408F3A5FECFC3E3D768752EB /* Pods_SCLAlertView_Tests.framework */; };
+		C7395F062D39EC6100BF9E16 /* SCLAlertShowTitleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7395F052D39EC6100BF9E16 /* SCLAlertShowTitleTests.swift */; };
 		C77477192D38CAF90008AF73 /* SCLAlertAppearanceInitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77477182D38CAF90008AF73 /* SCLAlertAppearanceInitTests.swift */; };
+		C774771B2D38D55E0008AF73 /* SCLButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774771A2D38D55E0008AF73 /* SCLButtonTests.swift */; };
+		C774771D2D38D70D0008AF73 /* SCLTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774771C2D38D70D0008AF73 /* SCLTextFieldTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +50,10 @@
 		6A258036377AC01E700511A0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		73C2745196B4A936D91EF0C0 /* Pods_SCLAlertView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCLAlertView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14EEF3AF1832D3922922790 /* Pods-SCLAlertView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCLAlertView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SCLAlertView_Tests/Pods-SCLAlertView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7395F052D39EC6100BF9E16 /* SCLAlertShowTitleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLAlertShowTitleTests.swift; sourceTree = "<group>"; };
 		C77477182D38CAF90008AF73 /* SCLAlertAppearanceInitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLAlertAppearanceInitTests.swift; sourceTree = "<group>"; };
+		C774771A2D38D55E0008AF73 /* SCLButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLButtonTests.swift; sourceTree = "<group>"; };
+		C774771C2D38D70D0008AF73 /* SCLTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLTextFieldTests.swift; sourceTree = "<group>"; };
 		F9050BB206B523F581BDA77E /* Pods-SCLAlertView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCLAlertView_Example.release.xcconfig"; path = "Target Support Files/Pods-SCLAlertView_Example/Pods-SCLAlertView_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +125,9 @@
 			children = (
 				607FACEB1AFB9204008FA782 /* SCLAlertViewInitTests.swift */,
 				C77477182D38CAF90008AF73 /* SCLAlertAppearanceInitTests.swift */,
+				C774771A2D38D55E0008AF73 /* SCLButtonTests.swift */,
+				C774771C2D38D70D0008AF73 /* SCLTextFieldTests.swift */,
+				C7395F052D39EC6100BF9E16 /* SCLAlertShowTitleTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -343,6 +352,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7395F062D39EC6100BF9E16 /* SCLAlertShowTitleTests.swift in Sources */,
+				C774771D2D38D70D0008AF73 /* SCLTextFieldTests.swift in Sources */,
+				C774771B2D38D55E0008AF73 /* SCLButtonTests.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* SCLAlertViewInitTests.swift in Sources */,
 				C77477192D38CAF90008AF73 /* SCLAlertAppearanceInitTests.swift in Sources */,
 			);
