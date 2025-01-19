@@ -37,7 +37,6 @@ extension UInt {
     func toCGColor() -> CGColor {
         return self.toUIColor().cgColor
     }
-    
 }
 
 extension String {
@@ -52,5 +51,4 @@ extension String {
         
         return boundingBox.height
     }
-    
 }
